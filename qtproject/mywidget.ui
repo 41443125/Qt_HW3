@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyWidget</class>
+ <widget class="QWidget" name="MyWidget">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>820</width><height>620</height></rect></property>
+  <property name="minimumSize"><size><width>660</width><height>480</height></size></property>
+  <property name="font"><font><family>Microsoft JhengHei</family><pointsize>11</pointsize></font></property>
+  <property name="windowTitle"><string>通訊錄</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0,0">
+   <property name="spacing"><number>10</number></property>
+   <property name="leftMargin"><number>16</number></property>
+   <property name="topMargin"><number>16</number></property>
+   <property name="rightMargin"><number>16</number></property>
+   <property name="bottomMargin"><number>16</number></property>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="rowCount"><number>0</number></property>
+     <property name="columnCount"><number>4</number></property>
+     <column><property name="text"><string>學號</string></property></column>
+     <column><property name="text"><string>班級</string></property></column>
+     <column><property name="text"><string>姓名</string></property></column>
+     <column><property name="text"><string>電話</string></property></column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="fieldGrowthPolicy"><enum>QFormLayout::AllNonFixedFieldsGrow</enum></property>
+     <property name="verticalSpacing"><number>10</number></property>
+     <item row="0" column="0"><widget class="QLabel" name="studentIdLabel"><property name="text"><string>學號：</string></property><property name="buddy"><cstring>studentIdEdit</cstring></property></widget></item>
+     <item row="0" column="1"><widget class="QLineEdit" name="studentIdEdit"/></item>
+     <item row="1" column="0"><widget class="QLabel" name="classLabel"><property name="text"><string>班級：</string></property><property name="buddy"><cstring>classEdit</cstring></property></widget></item>
+     <item row="1" column="1"><widget class="QLineEdit" name="classEdit"/></item>
+     <item row="2" column="0"><widget class="QLabel" name="nameLabel"><property name="text"><string>姓名：</string></property><property name="buddy"><cstring>nameEdit</cstring></property></widget></item>
+     <item row="2" column="1"><widget class="QLineEdit" name="nameEdit"/></item>
+     <item row="3" column="0"><widget class="QLabel" name="phoneLabel"><property name="text"><string>電話：</string></property><property name="buddy"><cstring>phoneEdit</cstring></property></widget></item>
+     <item row="3" column="1"><widget class="QLineEdit" name="phoneEdit"/></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item><widget class="QPushButton" name="importButton"><property name="minimumSize"><size><width>0</width><height>32</height></size></property><property name="text"><string>匯入</string></property></widget></item>
+     <item><widget class="QPushButton" name="addButton"><property name="minimumSize"><size><width>0</width><height>32</height></size></property><property name="text"><string>新增</string></property></widget></item>
+     <item><widget class="QPushButton" name="exportButton"><property name="minimumSize"><size><width>0</width><height>32</height></size></property><property name="text"><string>匯出</string></property></widget></item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops><tabstop>studentIdEdit</tabstop><tabstop>classEdit</tabstop><tabstop>nameEdit</tabstop><tabstop>phoneEdit</tabstop><tabstop>addButton</tabstop><tabstop>importButton</tabstop><tabstop>exportButton</tabstop><tabstop>tableWidget</tabstop></tabstops>
+ <resources/>
+ <connections/>
+</ui>
